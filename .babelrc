@@ -1,0 +1,14 @@
+{
+    "plugins": ["transform-flow-strip-types"],
+    "presets": [
+        "es2016",
+        "flow", [
+            "env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ]
+    ]
+}

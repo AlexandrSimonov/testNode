@@ -1,0 +1,45 @@
+{
+  "name": "my",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rimraf ./dist && babel -d ./dist ./src -s && node dist/main.js",
+    "clean": "rimraf ./dist",
+    "test": "mocha --require babel-polyfill --compilers js:babel-register",
+    "dev": "nodemon dev.js",
+    "lint:js": "eslint ./src",
+    "lint-staged": "lint-staged",
+    "build": "cd ./node_modules/.bin && babel"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "pre-commit": "lint-staged",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.24.1",
+    "chai": "^4.1.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "flow-bin": "^0.51.1",
+    "lint-staged": "^4.0.2",
+    "nodemon": "^1.11.0",
+    "pre-commit": "^1.2.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.11.5"
+  }
+}
