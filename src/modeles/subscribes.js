@@ -1,5 +1,5 @@
-import mongoose from "../conf/db";
-import SubscribesSchema from "../schemas/subscribes";
+import mongoose from "../db";
+import SubscribesSchema from "./schemas/subscribes";
 
 const Subscribe = mongoose.model("subscribes", SubscribesSchema);
 
