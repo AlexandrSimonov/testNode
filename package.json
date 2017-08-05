@@ -41,7 +41,9 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.15.3",
+    "i18n-express": "^1.1.2",
     "mongoose": "^4.11.5",
     "mustache-express": "^1.2.5",
     "validate.js": "^0.11.1"

@@ -1,6 +1,6 @@
 import mongoose from "../db";
 import SubscribesSchema from "./schemas/subscribes";
 
-const Subscribe = mongoose.model("subscribes", SubscribesSchema);
+const Subscribes = mongoose.model("subscribes", SubscribesSchema);
 
-export default Subscribe;
+export default Subscribes;

@@ -9,9 +9,11 @@
 </head>
 
 <body>
-  <div>
-    <p>Спасибо за подписку</p>
-  </div>
+  {{# message }}
+  <p>{{ message }}</p>
+  {{/ message }} {{# error }}
+  <p>{{ error }}</p>
+  {{/ error}}
 </body>
 
 </html>

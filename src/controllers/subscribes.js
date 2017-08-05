@@ -10,7 +10,18 @@ app.get("/subscribes/getAll", (req, res) => {
 app.post("/subscribes/subs", (req, res) => {
   const { firstName, lastName, email } = req.body;
 
-  Subscribes.create({ firstName, lastName, email });
-
-  res.render("thanksSub");
+  Subscribes.create({
+    firstName,
+    lastName,
+    email,
+    payments: []
+  }).then(data => {
+    if (data) {
+      res.render("subs", { message: "Всё окей" });
+    } else {
+      res.render("subs", {
+        error: "Произошла ошибка. Попытайтесь повторить позже"
+      });
+    }
+  });
 });
