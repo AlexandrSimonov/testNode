@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const connect = mongoose.connect(
-  "mongodb://localhost/test",
+  process.env.mongo_connect,
   {
     useMongoClient: true
   },

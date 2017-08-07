@@ -6,6 +6,6 @@ app.use((req, res) => {
   res.status(404).render("err404");
 });
 
-app.listen(3040, () => {
+app.listen(process.env.port, () => {
   console.log("Example app listening on port 3000!");
 });
