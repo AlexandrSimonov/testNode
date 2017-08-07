@@ -1,3 +1,43 @@
+<div class="wrapper">
+  <div class="subblock">
+    <p>Подпишись на рассылку</p>
+    <img src="images/1.png" class="fullimg">
+    <p class="textsub"> и дважды в неделю (вторник и пятница) Вы будете получать e-mail с нескучным немецким.</p>
+  </div>
+  <div class="infoblock">
+    <h5>В каждом письме Вас ждёт:</h5>
+    <ul>
+      <li>видеофрагмент для улучшения понимания немецкой речи на слух</li>
+      <li>разбор диалогов и устойчивых выражений</li>
+      <li>отрывки статей, отзывы и интересные факты о мультсериале</li>
+      <li>рассмотрение одной грамматической темы из письма</li>
+    </ul>
+  </div>
+  <div class="persblock">
+    <div class="col">
+      <h5>Почему Gravity Falls?</h5>
+      <p>Потому что это – отличный вариант для изучения живого немецкого языка как для детей, так и для взрослых. </p>
+    </div>
+    <div class="col mabelcol">
+      <img src="images/3.png">
+    </div>
+  </div>
+  <div class="persblock ppblock">
+    <div class="col ppcol">
+      <img src="images/4.png">
+    </div>
+    <div class="col">
+      <p>Заполните форму ниже и получите первое бесплатное письмо, в котором Вы познакомитесь с создателем и главными персонажами
+        Gravity Falls.</p>
+    </div>
+  </div>
+  <div class="price">
+    <p>Стоимость полного курса из 10 писем</p>
+    <div class="pr">10 €</div>
+    <div class="pr">307 ₴</div>
+    <div class="pr">720 ₽</div>
+  </div>
+</div>
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">

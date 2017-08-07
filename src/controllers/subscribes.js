@@ -3,7 +3,7 @@ import Subscribes from "../modeles/subscribes";
 
 app.post("/subscribes/subs", (req, res) => {
   const { firstName, lastName, email } = req.body;
-
+  console.log("АЛО");
   Subscribes.create({
     firstName,
     lastName,
@@ -11,11 +11,11 @@ app.post("/subscribes/subs", (req, res) => {
     payments: []
   }).then(data => {
     if (data) {
-      res.render("subs", { message: "Всё окей" });
+      console.log("АЛО 2");
+      res.render("layout", { partials: { content: "subs" } });
     } else {
-      res.render("subs", {
-        error: "Произошла ошибка. Попытайтесь повторить позже"
-      });
+      console.log("АЛО 3");
+      res.render("layout", { partials: { content: "subs" } });
     }
   });
 });

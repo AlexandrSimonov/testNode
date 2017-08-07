@@ -1,0 +1,110 @@
+@font-face {
+	font-family: "MinionProIt";
+	src: url(fonts/MinionPro-It.otf);
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: #608b56;
+	font-weight: 100;
+	font-family: "Helvetica";
+}
+
+.wrapper {
+	max-width: 840px;
+	margin: 0 auto;
+}
+.fullimg {
+	width: 100%;
+}
+
+.subblock {
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.subblock p {
+	margin: 30px 15px;
+}
+.infoblock {
+	background: url(images/2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	padding: 0 20px 20px;
+	margin-top: 50px;
+}
+
+.infoblock h5 {
+	margin: 0;
+	font-size: 40px;
+	padding: 38px;
+}
+
+.infoblock ul {
+	font-size: 28px;
+}
+
+.infoblock li {
+	margin-bottom: 10px;
+}
+
+.persblock {
+	display: table;
+	width: 100%;
+	color: #fff;
+}
+
+.col {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.mabelcol {
+	padding: 30px 0;
+}
+
+.ppblock {
+	background: #3e5d37;
+}
+
+.persblock h5 {
+	font-size: 35px;
+	margin: 50px 0 20px 15px;
+	text-align: center;
+}
+
+.persblock p {
+	font-size: 30px;
+	margin: 0 15px;
+	text-align: center;
+}
+
+.ppcol {
+	padding: 20px;
+}
+
+.price {
+	text-align: center;
+	color: #fff;
+}
+
+.price p {
+	font-size: 35px;
+}
+
+.price div {
+	font-family: Calibri;
+	font-size: 45px;
+	color: #000;
+	font-weight: bold;
+	background: #fff;
+	border-radius: 15px;
+	padding: 15px 0;
+	width: 180px;
+	display: inline-block;
+	margin: 15px 30px;
+}
