@@ -1,1 +1,1 @@
-asdas
+<div class="message"> {{ message }} </div>

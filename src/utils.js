@@ -5,4 +5,8 @@ function validateEmail(email) {
   return validate({ email }, { email: { email: true } }) === undefined;
 }
 
-export default { validateEmail };
+function validateName(name) {
+  return validate.isDefined(name);
+}
+
+export default { validateEmail, validateName };

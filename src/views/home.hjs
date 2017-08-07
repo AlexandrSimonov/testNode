@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="subblock">
     <p>Подпишись на рассылку</p>
-    <img src="images/1.png" class="fullimg">
+    <img src="/images/1.png" class="fullimg">
     <p class="textsub"> и дважды в неделю (вторник и пятница) Вы будете получать e-mail с нескучным немецким.</p>
   </div>
   <div class="infoblock">
@@ -19,12 +19,12 @@
       <p>Потому что это – отличный вариант для изучения живого немецкого языка как для детей, так и для взрослых. </p>
     </div>
     <div class="col mabelcol">
-      <img src="images/3.png">
+      <img src="/images/3.png">
     </div>
   </div>
   <div class="persblock ppblock">
     <div class="col ppcol">
-      <img src="images/4.png">
+      <img src="/images/4.png">
     </div>
     <div class="col">
       <p>Заполните форму ниже и получите первое бесплатное письмо, в котором Вы познакомитесь с создателем и главными персонажами
@@ -45,19 +45,19 @@
         <div class="form-group">
           <label for="inputFirstName3" class="col-sm-1 control-label">Имя</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputFirstName3" placeholder="Имя" name="firstName">
+            <input type="text" class="form-control" id="inputFirstName3" placeholder="Имя" name="firstName" required>
           </div>
         </div>
         <div class="form-group">
           <label for="inputLastName3" class="col-sm-1 control-label">Фамилия</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputLastName3" placeholder="Фамилия" name="lastName">
+            <input type="text" class="form-control" id="inputLastName3" placeholder="Фамилия" name="lastName" required>
           </div>
         </div>
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-1 control-label">Email</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email" required>
           </div>
         </div>
         <div class="form-group">
