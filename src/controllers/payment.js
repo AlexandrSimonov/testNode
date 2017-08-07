@@ -1,24 +1,29 @@
-import LiqPay from "liqpay-sdk";
 import app from "../app";
-// import Subscribes from "../modeles/subscribes";
-
-const liqpay = new LiqPay(
-  "i72034753150",
-  "ftuAp6YCwhV9zbFXsKXvsl5fTRY1LcvA2BGBpYdL"
-);
-
-const html = liqpay.cnb_form({
-  action: "pay",
-  amount: "0.01",
-  currency: "UAH",
-  order_id: "1",
-  description: "Подписка на рассылку",
-  version: "3"
-});
+import payment from "../api/payment";
+import utils from "../utils";
+import Subscribes from "../modeles/subscribes";
 
 app.get("/payment", (req, res) => {
+  const email = req.query.email;
+
+  if (!utils.validateEmail(email)) {
+    res.render("layout", {
+      message:
+        "Что-то пошло не так. Обратитесь в поддержку, написав на почту soniatech@gmail.com",
+      partials: { content: "payment" }
+    });
+    return;
+  }
+
   res.render("layout", {
-    form: html,
-    partials: { content: "payment", footer: "partials/footer" }
+    form: payment.generateForm(email),
+    partials: { content: "payment" }
   });
+});
+
+app.post("/payment/result", req => {
+  if (payment.sign(req.body.data) === req.body.signature) {
+    const email = JSON.parse(req.body.info).email;
+    Subscribes.update({ email }, (payment: true));
+  }
 });

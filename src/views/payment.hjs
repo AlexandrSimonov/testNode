@@ -1,8 +1,3 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
-      <p>Подписка стоит 2 грн</p>
-      {{{ form }}}
-    </div>
-  </div>
-</div>
+{{#message}}
+<p>{{message}}</p>
+{{/message}} {{^message}} {{{ form }}} {{/message}}

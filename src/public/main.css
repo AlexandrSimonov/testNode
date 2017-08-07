@@ -112,3 +112,7 @@ body {
   margin: 50px 0;
   font-size: 45px;
 }
+
+.message a {
+  color: #fff;
+}

@@ -1,1 +1,6 @@
-<div class="message"> {{ message }} </div>
+<div class="message">
+  <p>{{ message }} </p>
+  {{#err}}
+  <p><a href="/">Повторить заполнение</a></p>
+  {{/err}}
+</div>
